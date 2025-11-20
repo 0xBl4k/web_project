@@ -1,0 +1,1 @@
+this is a folder for iamges and backgroudns to make everything clean and good, so yalla works
