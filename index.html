@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!--this is a main page-->
 </head>
 <body>
-    <!--this is a main page-->
+    <!-- Navigation Bar -->
     <div class="nav-bar">
-        <ul type="none">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About_Us.html">About Us</a></li>
-            <li><a href="learning_hub.html">Learning Hub</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-        </ul>
+            <a href="index.html">Home</a>&emsp; 
+            <a href="about_us.html">About Us</a>&emsp;
+            <a href="learning_hub.html">Learning Hub</a>&emsp;
+            <a href="contact_us.html">Contact Us</a>&emsp;
     </div>
 
-    <h1>Start Your Tech Journey Today — Learn Essential Skills Step by Step.</h1>
+    <h3 id="1">Start Your Tech Journey Today — Learn Essential Skills Step by Step.</h3>
 
 
 
@@ -25,15 +24,23 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aspernatur! Excepturi quidem, cum molestiae, inventore doloribus odit nam quo molestias repellendus pariatur reiciendis autem? Quas doloremque pariatur modi cum voluptatem?</p>
 
     
-    <fieldset>
-        <legend>Featured categories</legend>
-        <div id="box1">Web Basics</div>
-        <div id="box2">Cybersecurity</div>
-        <div id="box3">Programming Fundamentals</div>
-        <div id="box4">Digital Tools for Productivity</div>
+    <fieldset style="display: flex; width: 60%;">
+        <legend style="border: 1px solid black;">Featured categories</legend>
+        <div id="box1" class="box">Web Basics
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+        </div>
+        <div id="box2" class="box">Cybersecurity
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+        </div>
+        <div id="box3" class="box">Programming Fundamentals
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+        </div>
+        <div id="box4" class="box">Digital Tools for Productivity
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+        </div>
     </fieldset>
 
-
+    <p>go back at the <a href="#1">beginning</a></p>
     
 </body>
 </html>
