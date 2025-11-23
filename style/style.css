@@ -1,15 +1,30 @@
 /*taken by khalil*/
 body{
-    
-    
+    background-image: url(/images&backgrounds/background.png);
+    background-size:cover;
 }
 
 button{
     border-radius: 10px;
-    background-color: cornflowerblue;
+    background-color: #35dffd;
     text-align: center;
     padding: 10px;
     color: white;
     font-size: 20px;
+    
+}
+
+.nav-bar {
+    /* background-color: #3192d6; */
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+    font-size: 25px;
+    
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     
 }

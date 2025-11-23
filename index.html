@@ -7,44 +7,45 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="style/style.css">
     <style>
-    
-    h3{
-        font-size: 30px;
-    }
 
-    p{
-        font-size: large;
+    h3{
+        font-size: 60px;
+    }
+    
+    .intro {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        padding-right: 20%; 
+        margin-left:100px ;
     }
 
     .box {
     border: 2px solid black;
+    border-radius: 10px 0px 10px 0px;
     padding: 20px;
     margin: 20px;
     text-align: center;
-    color: rgb(64, 64, 240);
+    color: rgb(34, 69, 165);
     font-size: 26px;
+    background-color: aliceblue;
     }
 
     .box p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
+    font-size: large;
     }
 
-    .nav-bar {
-    background-color: #dbdbdb;
-    text-align: left;
-    border: solid 1px black;
-    width: 99%;
-    padding: 10px;
-    font-size: 25px;
-    
-    
+    button{
+        margin-left: 80px;
     }
-    .nav-bar a{
-    text-decoration: none;
-    color: black;
-    
+
+    fieldset{
+        border: 3px solid black; 
+        padding: 20px; 
+        background-color: #cae6fa;
     }
+
     </style>
     <!--this is a main page-->
 </head>
@@ -57,31 +58,30 @@
             <a href="contact_us.html"><img src="images&backgrounds/contact_us.png" width="25px"> Contact Us</a>&emsp;
     </div>
 
-    <h3 id="1">Start Your Tech Journey Today — Learn Essential Skills Step by Step.</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, aspernatur! Excepturi quidem, cum molestiae, inventore doloribus odit nam quo molestias repellendus pariatur reiciendis autem? Quas doloremque pariatur modi cum voluptatem?</p>
-    <button>Get Started</button><br><br><br><br><br><br><br><br><br><br>
+    <div class="intro">
+        <h3 id="1">Start Your Tech Journey Today — Learn Essential Skills Step by Step.</h3>
+        <p>Technology doesn’t have to be confusing or overwhelming. Our platform guides you through the basics with clear explanations, simple examples, and beginner-friendly lessons designed to build your confidence one step at a time. Whether you’re learning to code, understand the internet, or explore digital tools, you’ll find everything you need to grow your skills and unlock new opportunities in the tech world. Your journey starts here — and you can learn at your own pace.</p>
+        <button>Get Started</button>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-    <!-- tbh idk what to add to this paragraph but yall do something -->
-
-    
-    <fieldset style="width: 60%; margin-left:300px; border: 5px solid black; padding: 20px;">
-        <legend style="border: 5px solid black; font-size: 35px;">Featured categories</legend>
+    <fieldset>
+        <legend style="border: 2px solid black; font-size: 35px; background-color: #deeffb;">Featured categories</legend>
         <div id="box1" class="box">Web Basics
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+            <p>The web is the foundation of almost every modern job, from marketing to programming. It is made up of millions of connected pages that you access through a browser like Chrome or Firefox. Understanding how the web works—how websites load, how links connect information, and how basic languages like HTML and CSS shape pages—gives beginners a strong starting point in tech. These basics help you build confidence and open the door to more advanced digital skills.</p>
         </div>
         <div id="box2" class="box">Cybersecurity
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+            <p>Cybersecurity skills are important for every career, not just for IT professionals. They teach you how to protect your data, your accounts, and your devices from online threats. Learning simple habits—like creating strong passwords, avoiding suspicious links, and recognizing phishing attempts—helps you stay safe and responsible in any workplace. These skills also make you a more reliable and trusted digital user, which is valuable for career growth.</p>
         </div>
         <div id="box3" class="box">Programming Fundamentals
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+            <p>Programming skills are becoming essential in many career paths, even outside the tech industry. Learning the basics—such as variables, loops, and conditions—teaches you how to think logically, solve problems, and automate tasks. Beginner-friendly languages like Python and JavaScript help you quickly understand how computers follow instructions. These fundamentals prepare you for building real projects and can greatly improve your career opportunities in the future.</p>
         </div>
         <div id="box4" class="box">Digital Tools for Productivity
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt esse pariatur minima blanditiis reprehenderit provident nisi iste rerum molestias aut, incidunt maiores amet deleniti, veritatis, ab laudantium. Adipisci, porro!</p>
+            <p>Digital productivity tools are used in almost every professional environment. Platforms like Google Drive, Notion, and Trello help you manage tasks, organize files, and work efficiently with others. Learning how to use these tools makes you more productive, more organized, and more prepared for modern work environments. These skills not only help beginners study better but also make them more competitive in their future careers.</p>
         </div>
     </fieldset>
 
-    <p>go back to the <a href="#1">beginning</a></p>
+    <p style="text-align: center;"><a href="#1" style="color: black; text-decoration: none;">Go<img src="images&backgrounds/arrowup.png" width="25px" style="border: 2px solid black; border-radius: 100px; padding: 4px;">Up</a></p>
     
 </body>
 </html>
