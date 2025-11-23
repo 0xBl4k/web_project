@@ -1,4 +1,15 @@
 /*taken by khalil*/
 body{
+    
+    
+}
 
+button{
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    
 }
