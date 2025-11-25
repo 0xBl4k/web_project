@@ -4,14 +4,46 @@ body{
     background-size:cover;
 }
 
-button{
+#start{
     border-radius: 10px;
-    background-color: #35dffd;
+    background-color: #98d0f8;
     text-align: center;
     padding: 10px;
     color: white;
     font-size: 20px;
-    
+    border: groove #ffffff;
+}
+
+#work{
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: #98d0f8;
+    font-size: 20px;
+    border:groove #98d0f8;
+ 
+}
+
+#work:hover{
+    border-radius: 10px;
+    background-color: #98d0f8;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    border-color: #ffffff;
+ 
+}
+
+#start:hover{
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: #98d0f8;
+    font-size: 20px;
+    border-color: #98d0f8;
 }
 
 .nav-bar {

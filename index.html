@@ -17,18 +17,26 @@
         font-size: 20px;
         padding-right: 20%; 
         margin-left:100px ;
+        background: url(/images&backgrounds/logo.png) no-repeat right;
+        background-size: 400px;
+        margin-right: 90px;
+    }
+    
+    .intro p, h3{
+        padding: 10px 90px 10px 0px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
     .box {
-    border: 2px solid black;
-    border-radius: 10px 0px 10px 0px;
+    
     padding: 20px;
     margin: 20px;
-    text-align: center;
+    text-align: left;
     color: rgb(34, 69, 165);
     font-size: 26px;
     background-color: aliceblue;
-    }
+    padding-right: 300px;
+}
 
     .box p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,12 +45,21 @@
     }
 
     button{
-        margin-left: 80px;
+        margin-left: 100px;
     }
 
     fieldset{
         border: 3px solid black; 
         padding: 20px; 
+        background-color: #cae6fa;
+        margin: 15% 20% 0px;
+    }
+    
+    .section{
+        border: groove 4px rgb(102, 194, 236);
+        margin: 300px -20px 0px -30px;
+        padding: 20px;
+
         background-color: #cae6fa;
     }
 
@@ -52,34 +69,41 @@
 <body>
     <!-- Navigation Bar -->
     <div class="nav-bar">
-            <a href="index.html"><img src="images&backgrounds/home.png" width="25px"> Home</a>&emsp; 
+            <a href="index.html"><img src="images&backgrounds/navigationicons/home.png" width="25px"> Home</a>&emsp; 
             <a href="about_us.html"><img src="images&backgrounds/about_us.png" width="25px"> About Us</a>&emsp;
-            <a href="learning_hub.html" target="_blank"><img src="images&backgrounds/learninghub.png" width="25px"> Learning Hub</a>&emsp;
+            <a href="learning_hub.html"><img src="images&backgrounds/learninghub.png" width="25px"> Learning Hub</a>&emsp;
+            <a href="selfAsses_growthtools.html"><img src="images&backgrounds/assestment.png" width="28px"> Self Assestment</a>&emsp;
+            <a href="stories.html"><img src="images&backgrounds/stories.png" width="27px"> Stories</a>&emsp;
+            <a href="workshop.html"><img src="images&backgrounds/workshop.png" width="25px"> Workshop</a>&emsp;
             <a href="contact_us.html"><img src="images&backgrounds/contact_us.png" width="25px"> Contact Us</a>&emsp;
     </div>
 
     <div class="intro">
         <h3 id="1">Start Your Tech Journey Today — Learn Essential Skills Step by Step.</h3>
         <p>Technology doesn’t have to be confusing or overwhelming. Our platform guides you through the basics with clear explanations, simple examples, and beginner-friendly lessons designed to build your confidence one step at a time. Whether you’re learning to code, understand the internet, or explore digital tools, you’ll find everything you need to grow your skills and unlock new opportunities in the tech world. Your journey starts here — and you can learn at your own pace.</p>
-        <button>Get Started</button>
+        <a href="learning_hub.html"><button id="start">Get Started</button></a>
+        <a href="workshop.html"><button id="work">See Workshop</button></a>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
 
-    <fieldset>
-        <legend style="border: 2px solid black; font-size: 35px; background-color: #deeffb;">Featured categories</legend>
-        <div id="box1" class="box">Web Basics
-            <p>The web is the foundation of almost every modern job, from marketing to programming. It is made up of millions of connected pages that you access through a browser like Chrome or Firefox. Understanding how the web works—how websites load, how links connect information, and how basic languages like HTML and CSS shape pages—gives beginners a strong starting point in tech. These basics help you build confidence and open the door to more advanced digital skills.</p>
-        </div>
-        <div id="box2" class="box">Cybersecurity
-            <p>Cybersecurity skills are important for every career, not just for IT professionals. They teach you how to protect your data, your accounts, and your devices from online threats. Learning simple habits—like creating strong passwords, avoiding suspicious links, and recognizing phishing attempts—helps you stay safe and responsible in any workplace. These skills also make you a more reliable and trusted digital user, which is valuable for career growth.</p>
-        </div>
-        <div id="box3" class="box">Programming Fundamentals
-            <p>Programming skills are becoming essential in many career paths, even outside the tech industry. Learning the basics—such as variables, loops, and conditions—teaches you how to think logically, solve problems, and automate tasks. Beginner-friendly languages like Python and JavaScript help you quickly understand how computers follow instructions. These fundamentals prepare you for building real projects and can greatly improve your career opportunities in the future.</p>
-        </div>
-        <div id="box4" class="box">Digital Tools for Productivity
-            <p>Digital productivity tools are used in almost every professional environment. Platforms like Google Drive, Notion, and Trello help you manage tasks, organize files, and work efficiently with others. Learning how to use these tools makes you more productive, more organized, and more prepared for modern work environments. These skills not only help beginners study better but also make them more competitive in their future careers.</p>
-        </div>
-    </fieldset>
+    <div class="section">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla amet, aliquid porro aspernatur hic non blanditiis magnam corrupti at doloribus sequi nemo tenetur illum ut recusandae assumenda exercitationem consequatur aut!</p>
+        <fieldset>
+            <legend style="border: 2px solid black; font-size: 35px; background-color: #ffffff;">Featured categories</legend>
+            <div id="box1" class="box">🌐Web Basics
+                <p>The web is the foundation of almost every modern job, from marketing to programming. It is made up of millions of connected pages that you access through a browser like Chrome or Firefox. Understanding how the web works—how websites load, how links connect information, and how basic languages like HTML and CSS shape pages—gives beginners a strong starting point in tech. These basics help you build confidence and open the door to more advanced digital skills.</p>
+            </div>
+            <div id="box2" class="box">🔐Cybersecurity
+                <p>Cybersecurity skills are important for every career, not just for IT professionals. They teach you how to protect your data, your accounts, and your devices from online threats. hrLearning simple habits—like creating strong passwords, avoiding suspicious links, and recognizing phishing attempts—helps you stay safe and responsible in any workplace. These skills also make you a more reliable and trusted digital user, which is valuable for career growth.</p>
+            </div>
+            <div id="box3" class="box">💻Programming Fundamentals
+                <p>Programming skills are becoming essential in many career paths, even outside the tech industry. Learning the basics—such as variables, loops, and conditions—teaches you how to think logically, solve problems, and automate tasks. Beginner-friendly languages like Python and JavaScript help you quickly understand how computers follow instructions. These fundamentals prepare you for building real projects and can greatly improve your career opportunities in the future.</p>
+            </div>
+            <div id="box4" class="box">⚙️Digital Tools for Productivity
+                <p>Digital productivity tools are used in almost every professional environment. Platforms like Google Drive, Notion, and Trello help you manage tasks, organize files, and work efficiently with others. Learning how to use these tools makes you more productive, more organized, and more prepared for modern work environments. These skills not only help beginners study better but also make them more competitive in their future careers.</p>
+            </div>
+        </fieldset>
+    </div>
 
     <p style="text-align: center;"><a href="#1" style="color: black; text-decoration: none;">Go<img src="images&backgrounds/arrowup.png" width="25px" style="border: 2px solid black; border-radius: 100px; padding: 4px;">Up</a></p>
     

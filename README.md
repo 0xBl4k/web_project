@@ -1,6 +1,7 @@
 PHASE 1
 The first phase of the website development must consist of at least seven web pages for phase 1 and
 include at least one external CSS file. The following elements are required:
+
 1) Home Page: Introduce the platform with a clear statement of purpose, attractive visuals, and a
 summary of the benefits users gain from improving their skills and career growth.
 
