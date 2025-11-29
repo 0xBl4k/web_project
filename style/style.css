@@ -1,7 +1,11 @@
 /*taken by khalil*/
-body{
+body, html{
     background-image: url(/images&backgrounds/darkone.png);
+    background-color: #004d66;
     background-size:contain;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 #start{
@@ -79,6 +83,15 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.nav-bar {
+    /* background-color: #3192d6; */
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #02638375;
+    
+}
 
 /* Body styling */
 body {
@@ -131,6 +144,3 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
-
-
