@@ -55,8 +55,9 @@ body, html{
     text-align: center;
     width: 99%;
     padding: 10px;
+    margin-right: 900px;
     font-size: 25px;
-    background-color: #02638375;
+    background-color: #0263835e;
     
 }
 .nav-bar a{
