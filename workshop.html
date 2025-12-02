@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WorkShop</title>
     <link rel="stylesheet" href="style/style.css">
     <style>
 
@@ -33,13 +33,10 @@
             width: 70%;
             margin: 0 auto;
             color: #34495e;
-            line-height: 1.6;
         }
 
         /* ---- WORKSHOP CARDS ---- */
         .workshop-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
             padding: 40px 50px;
         }
@@ -48,17 +45,11 @@
             background: white;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            transition: transform 0.25s ease;
-        }
-
-        .workshop-card:hover {
-            transform: translateY(-5px);
+            margin: 40px 400px;
         }
 
         .workshop-card img {
             width: 60px;
-            display: block;
             margin: 0 auto 15px auto;
         }
 
@@ -75,15 +66,18 @@
         }
 
         .workshop-card a {
-            display: block;
             text-align: center;
-            margin-top: 15px;
-            padding: 10px;
+            margin-top: 10px;
+            padding: 1px;
             background: #3498db;
             color: white;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        .workshop-card li{
+            margin-top: 10px;
         }
 
         .workshop-card a:hover {
@@ -107,48 +101,63 @@
 
 
     <!-- Workshop Header -->
-    <section class="workshop-header">
+    <div class="workshop-header">
         <h1>Welcome to the Workshop</h1>
         <p>
             Learn by doing! Explore hands-on mini projects, beginner-friendly lessons, 
             and simple interactive activities designed to make technology easy and enjoyable. 
             Select a workshop below and start building your skills step by step.
         </p>
-    </section>
+    </div>
 
 
     <!-- Workshop Cards -->
-    <section class="workshop-container">
-
+    <div class="workshop-container">
+        
         <div class="workshop-card">
-            <img src="images&backgrounds/workshopicons/code.png">
+            <h3>Web Basics</h3>
+            <p>Learn the fundamentals of creating websites using HTML, CSS, and basic JavaScript.</p>
+            <ul>
+                sources:
+                <li><a href="https://www.w3schools.com/html/default.asp">w3schools HTML</a> best site for learning html</li>
+                <li><a href="https://web.dev/learn/css">web.dev CSS</a> comprehensive CSS learning resource</li>
+                <li><a href="https://javascript.info/">javascript.info</a> detailed JavaScript tutorials</li>
+            </ul>
+        </div>
+        
+        <div class="workshop-card">
+            <h3>Cybersecurity</h3>
+            <p>Learn the basics of staying safe online, protecting your data, and understanding digital privacy.</p>
+            <ul>
+                sources:
+                <li><a href="https://www.hackthebox.com/">HackTheBox</a> hands on hacking labs and categories</li>
+                <li><a href="https://tryhackme.com/">TryHackMe</a> very friendly beginner platform</li>
+                <li><a href="https://cyberdefenders.org/">CyberDefenders</a> perfect for blue team</li>
+            </ul>
+        </div>
+        
+        <div class="workshop-card">
             <h3>Coding Basics</h3>
             <p>Start learning the foundations of coding with simple examples and guided tasks.</p>
-            <a href="#">Start Workshop</a>
+            <ul>sources:
+                <li><a href="https://dev.java/learn/">Java Development</a> comprehensive Java tutorials</li>
+                <li><a href="https://cplusplus.com/doc/tutorial/">C++ Tutorials</a> detailed C++ programming guide</li>
+                <li><a href="https://realpython.com/search?kind=article&kind=course&order=newest">Real Python</a> extensive Python resources</li>
+            </ul>
         </div>
-
+        
         <div class="workshop-card">
-            <img src="images&backgrounds/workshopicons/internet.png">
-            <h3>Internet Skills</h3>
-            <p>Understand how the internet works, websites, browsers, and online safety.</p>
-            <a href="#">Learn More</a>
-        </div>
-
-        <div class="workshop-card">
-            <img src="images&backgrounds/workshopicons/tools.png">
             <h3>Digital Tools</h3>
             <p>Get comfortable with useful tools like Google Docs, Excel, and cloud storage.</p>
-            <a href="#">Explore Tools</a>
+            <ul>sources:
+                <li><a href="https://support.google.com/docs/">Google Docs Help</a> official documentation and tutorials</li>
+                <li><a href="https://support.microsoft.com/en-us/excel">Microsoft Excel Support</a> comprehensive Excel guides</li>
+                <li><a href="https://www.dropbox.com/learn">Dropbox Learning Center</a> cloud storage tutorials and tips</li>
+            </ul>
         </div>
 
-        <div class="workshop-card">
-            <img src="images&backgrounds/workshopicons/project.png">
-            <h3>Beginner Projects</h3>
-            <p>Build basic tech projects step-by-step, even with zero experience.</p>
-            <a href="#">View Projects</a>
-        </div>
 
-    </section>
+    </div>
 
 </body>
 </html>

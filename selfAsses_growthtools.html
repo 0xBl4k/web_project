@@ -41,9 +41,11 @@
       border-radius: 4px;
     }
 
-    input[type="range"] {
+    input.skills {
       width: 100%;
+      margin-bottom: 15px;
     }
+
 
     button {
       margin-top: 15px;
@@ -89,19 +91,19 @@
   <h2>Rate Your Basic Tech Knowledge</h2>
   <form>
     <label for="word-skill">Microsoft Word:</label>
-    <input type="range" id="word-skill" min="1" max="10">
+    <input type="range" class="skills" id="word-skill" min="1" max="10">
 
     <label for="ppt-skill">Microsoft PowerPoint:</label>
-    <input type="range" id="ppt-skill" min="1" max="10">
+    <input type="range" class="skills"  id="ppt-skill" min="1" max="10">
 
     <label for="excel-skill">Microsoft Excel:</label>
-    <input type="range" id="excel-skill" min="1" max="10">
+    <input type="range" class="skills" id="excel-skill" min="1" max="10">
 
     <label for="email-skill">Email & Communication Tools:</label>
-    <input type="range" id="email-skill" min="1" max="10">
+    <input type="range" class="skills" id="email-skill" min="1" max="10">
 
     <label for="internet-skill">Internet & Browsing:</label>
-    <input type="range" id="internet-skill" min="1" max="10">
+    <input type="range" class="skills" id="internet-skill" min="1" max="10">
 
     <button type="submit">Submit</button>
   </form>
