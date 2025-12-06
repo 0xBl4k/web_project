@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <style>
 
-.hero {
-    background-color: #ffffff;
+    /* About section */
+.about-section {
+    background-color: white;
     padding: 60px 20px;
     text-align: center;
 }
 
-.hero h2 {
+.about-section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-.hero p {
+.about-section p {
     color: #555;
-    line-height: 1.6;
-    max-width: 700px;
+    width: 700px;
     margin: 0 auto 20px;
 }
 
-.hero img {
+.about-section img {
     margin-top: 30px;
-    max-width: 400px;
-    width: 100%;
+    width: 500px;
 }
 
-.about-section {
+/* Hero section with background image */
+.hero {
     background-size: cover;
     background-position: center;
     color: white;
@@ -41,19 +41,19 @@
     padding: 100px 20px;
 }
 
-.about-section h1 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
-.about-section p {
+.hero p {
     font-size: 20px;
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
 }
 
-</style>
 
+</style>
 <body>
 
     <!-- Navigation Bar -->
@@ -67,11 +67,12 @@
             <a href="contact_us.html"><img src="images&backgrounds/navigationicons/contact_us.png" width="25px"> Contact Us</a>&emsp;
     </div>
     
-    <header class="about-section">
+    <div class="hero">
         <h1>About Us</h1>
         <p>Beginner Tech Learning helps you explore technology step by step, making it simple and fun.</p>
-    </header>
-    <section class="hero">
+    </div>
+
+    <div class="about-section">
         <h2>WHAT WE DO</h2>
         <p>
             We are a community-driven learning hub focused on teaching the basics of coding, hardware,
@@ -82,7 +83,14 @@
             confidence and practical skills for the digital world.
         </p>
         <img src="images&backgrounds/aboutus.png" alt="Technology learning illustration">
-    </section>
-
+        
+        <ul type="none">
+            our beloved team members:
+            <li>Khalil Jarrar</li>
+            <li>Mustafa Iskandarani</li>
+            <li>Ali Ahoudi</li>
+            <li>Amro Tareq</li>
+        </ul>
+    </div>
 </body>
 </html>
