@@ -15,18 +15,18 @@
     padding: 60px 20px;
     text-align: center;
 }
-
+/*-- Styling for the about section headings --*/
 .about-section h2 {
     color: #2c3e50;
     margin-bottom: 20px;
 }
-
+/*-- Styling for the about section paragraphs --*/
 .about-section p {
     color: #555;
     width: 700px;
     margin: 0 auto 20px;
 }
-
+/* About section image */
 .about-section img {
     margin-top: 30px;
     width: 500px;
@@ -41,6 +41,7 @@
     padding: 100px 20px;
 }
 
+/*-- Styling for the hero section headings --*/
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
@@ -52,6 +53,16 @@
     margin: 0 auto;
 }
 
+tr td {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+tr td:hover{
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
 
 </style>
 <body>
@@ -71,7 +82,7 @@
         <h1>About Us</h1>
         <p>Beginner Tech Learning helps you explore technology step by step, making it simple and fun.</p>
     </div>
-
+<!-- About Section -->
     <div class="about-section">
         <h2>WHAT WE DO</h2>
         <p>
@@ -84,13 +95,21 @@
         </p>
         <img src="images&backgrounds/aboutus.png" alt="Technology learning illustration">
         
-        <ul type="none">
-            our beloved team members:
-            <li>Khalil Jarrar</li>
-            <li>Mustafa Iskandarani</li>
-            <li>Ali Ahoudi</li>
-            <li>Amro Tareq</li>
-        </ul>
+        <!-- Team Members -->
+
+        <table border="1" style="border-spacing: 10px; margin: 0 auto; margin-top: 40px; border-radius: 20px;">
+            <tr>
+                <th colspan="2">our beloved team members:</th>
+            </tr>
+            <tr>
+                <td>Khalil Jarrar</td>
+                <td>Mustafa Iskandarani</td>
+            </tr>
+            <tr>
+                <td>Ali Ahoudi</td>
+                <td>Amro Tareq</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
