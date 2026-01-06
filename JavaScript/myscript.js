@@ -1,0 +1,1 @@
+// just a page made of my own javascript code that will be only applied to profile page
