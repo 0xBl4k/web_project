@@ -4,78 +4,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beginner Tech Assessment Form</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        legend{
+        legend {
             background-color: white;
+            font-weight: bold;
         }
-        fieldset{
+        fieldset {
             background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
         }
     </style>
 </head>
 <body>
-    <div style="padding: 10px; background-color: white; text-align: center;">
-        <h1>Beginner Tech Assessment Form</h1>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark border-body border-bottom" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechLearn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><img src="./images&backgrounds/navigationicons/home.png" width="15" alt=""> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about_us.html"><img src="./images&backgrounds/navigationicons/about_us.png" width="19" alt=""> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./learning_hub.html"><img src="./images&backgrounds/navigationicons/learninghub.png" width="20" alt=""> Learning Hub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workshop.html"><img src="./images&backgrounds/navigationicons/workshop.png" width="19" alt=""> Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Stories.html"><img src="./images&backgrounds/navigationicons/stories.png" width="19" alt=""> Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact_us.html"><img src="./images&backgrounds/navigationicons/contact_us.png" width="19" alt=""> Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./TechForm.html"><img src="./images&backgrounds/navigationicons/TechForm.png" width="19" alt=""> Tech Forms</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" id="clock">
+                    <script>
+                function updateClock() {
+                    var date = new Date();
+                    var dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+                    var timeString = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+                    document.getElementById("clock").innerHTML = dateString + " " + timeString;
+                }
+                setInterval(updateClock, 1000);
+                updateClock(); // made by one guy
+            </script>
+                </span>
+            </div>
+        </div>
+    </nav>
+<br><br>
+    <!-- Header -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 text-center bg-white py-3 rounded">
+                <h1>Beginner Tech Assessment Form</h1>
+            </div>
+        </div>
     </div>
-    <div>
-        <fieldset>
-            <legend>User Form</legend>
-        <form action="">
-            <label for="">Name: </label>
-            <input type="text" name="" id="">
-            <br>
-            <label for="">Email: </label>
-            <input type="email" name="" id="">
-            <br>
-            <label for="">Age: </label>
-            <input type="number" name="" id="">
-        </form>
-        </fieldset>
+
+    <!-- User Form Section -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <fieldset>
+                    <legend>User Form</legend>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="Fname" class="form-label">Name:</label>
+                                <input type="text" class="form-control" name="Fname" id="Fname">
+                                <span id="errName" style="color: red;"></span>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" name="Email" id="Email">
+                                <span id="errEmail" style="color: red;"></span>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Age" class="form-label">Age:</label>
+                                <input type="number" class="form-control" name="Age" id="Age">
+                                <span id="errAge" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
     </div>
-    <div>
-        <fieldset>
-            <legend>Status</legend>
-            <label for=""><h5>Learning Goal</h5></label><br>
-            <input type="radio" name="" id="">
-            <label for="">Cyber Security</label>
-            <input type="radio" name="" id="">
-            <label for="">Programming Basics</label>
-            <input type="radio" name="" id="">
-            <label for="">IT Fundamentals</label>
-            <input type="radio" name="" id="">
-            <label for="">Web Development</label>
-            <br><br>
-            <label for=""><h5>Current Skills</h5></label><br>
-            <input type="checkbox" name="" id="" value="">
-            <label for="">idk</label>
-            <input type="checkbox" name="" id="" value="">
-            <label for="">idk</label>
-            <input type="checkbox" name="" id="" value="">
-            <label for="">idk</label>
-            <input type="checkbox" name="" id="" value="">
-            <label for="">idk</label>
-            <input type="checkbox" name="" id="" value="">
-            <label for="">idk</label>
-            <br><br>
-            <label for="">Weekly study time</label>
-            <input type="number" name="" id=""><br>
-            <label for="">Experience Level</label>
-            <select name="" id="">
-                <option value="" selected disabled>-- Select --</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select><br>
-        </fieldset>
+
+    <!-- Status Section -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <fieldset>
+                    <legend>Status</legend>
+                    
+                    <!-- Learning Goal -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label class="form-label"><h5>Learning Goal</h5></label>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Goal" id="Goal1">
+                                        <label class="form-check-label" for="Goal1">Cyber Security</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Goal" id="Goal2">
+                                        <label class="form-check-label" for="Goal2">Programming Basics</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Goal" id="Goal3">
+                                        <label class="form-check-label" for="Goal3">IT Enginner</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="Goal" id="Goal4">
+                                        <label class="form-check-label" for="Goal4">Web Development</label>
+                                    </div>
+                                </div>
+                                <span id="errGoal" style="color: red; text-align: center;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Skills -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label class="form-label"><h5>Current Skills</h5></label>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Skills" id="HTML" value="HTML">
+                                        <label class="form-check-label" for="HTML">HTML</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Skills" id="CSS" value="CSS">
+                                        <label class="form-check-label" for="CSS">CSS</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Skills" id="JavaScript" value="JavaScript">
+                                        <label class="form-check-label" for="JavaScript">JavaScript</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Skills" id="Python" value="Python">
+                                        <label class="form-check-label" for="Python">Python</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="Skills" id="Networking" value="Networking">
+                                        <label class="form-check-label" for="Networking">Networking</label>
+                                    </div>
+                                <span id="errSkills" style="color: red;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Time and Experience -->
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="Time" class="form-label">Weekly study time (hours)</label>
+                            <input type="number" class="form-control" name="Time" id="Time">
+                            <span id="errTime" style="color: red;"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="exp" class="form-label">Experience Level</label>
+                            <select name="exp" id="exp" class="form-select">
+                                <option value="" selected disabled>-- Select --</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>  
+                            <span id="errExp" style="color: red;"></span>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
     </div>
-    <div>
-        <fieldset>
-            <button>Get a recommendation</button><br>
-            <label for="">Report</label><br>
-            <textarea name="" id="" cols="50" rows="10"></textarea>
-        </fieldset>
+
+    <!-- Report Section -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <fieldset>
+                    <legend>Recommendation</legend>
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <button class="btn btn-primary btn-lg w-100" onclick="GetRecommendation()">Get a recommendation</button>
+                        </div>
+                        <div class="col-12">
+                            <label for="Report" class="form-label fw-bold">Report</label>
+                            <textarea name="Report" id="Report" class="form-control" rows="10" value="" placeholder="Your report is going to be displayed here"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
     </div>
     <script src="./JavaScript/myscript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
