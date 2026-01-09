@@ -27,21 +27,43 @@ function ageValid(){
 function goalValid(){
     document.getElementById("errGoal").innerHTML = ""
     let goals = document.getElementsByName("Goal")
-    console.log(goals)
     for(i = 0 ; i < goals.length; i++){
         if(goals[i].checked){
-            break 
+            document.getElementById("errGoal").innerHTML = ""
+            return goals[i]
+             
         } 
         else{
             document.getElementById("errGoal").innerHTML = "please select a goal!"
-            break
-        }// continye pls
+        }
     }
-    return 
 }
 
 function skillValid(){
+    document.getElementById("errSkills").innerHTML = ""
+    let skills = document.getElementsByName("Skills")
+    let choosenskills = []
+    for(i = 0; i < skills.length ; i++){
+        if(skills[i].checked){
+            choosenskills.push(skills[i])
+        }
+    }
+    if(choosenskills.length == 0) document.getElementById("errSkills").innerHTML = "please select atleast one skill!"
+    return choosenskills
+}
 
+function studyTimeValid(){
+    document.getElementById("errTime").innerHTML = ""
+    let time = document.getElementById("Time").value
+    if(time <= 0) return document.getElementById("errTime").innerHTML = "please enter a a weekly study time!"
+    else if (time > 40) return document.getElementById("errTime").innerHTML = "no way u study that much"
+    return time;
+}
+
+function expValid(){
+    document.getElementById("errExp").innerHTML = ""
+    let exp = document.getElementById("exp").value
+    if(exp == "") document.getElementById("errExp").innerHTML = "please select an experience!"
 }
 
 function GetRecommendation(){
@@ -50,4 +72,7 @@ function GetRecommendation(){
     ageValid()
     goalValid()
     skillValid()
+    studyTimeValid()
+    expValid()
+   
 }

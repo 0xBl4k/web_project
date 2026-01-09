@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Hub</title>
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,16 +77,52 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="nav-bar">
-        <a href="index.html"><img src="images&backgrounds/navigationicons/home.png" width="25px"> Home</a>&emsp; 
-        <a href="about_us.html"><img src="images&backgrounds/navigationicons/about_us.png" width="25px"> About Us</a>&emsp;
-        <a href="learning_hub.html"><img src="images&backgrounds/navigationicons/learninghub.png" width="25px"> Learning Hub</a>&emsp;
-        <a href="selfAsses_growthtools.html"><img src="images&backgrounds/navigationicons/assestment.png" width="28px"> Self Assesment</a>&emsp;
-        <a href="stories.html"><img src="images&backgrounds/navigationicons/stories.png" width="27px"> Stories</a>&emsp;
-        <a href="workshop.html"><img src="images&backgrounds/navigationicons/workshop.png" width="25px"> Workshop</a>&emsp;
-        <a href="contact_us.html"><img src="images&backgrounds/navigationicons/contact_us.png" width="25px"> Contact Us</a>&emsp;
-    </div>
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark border-body border-bottom" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TechLearn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html"><img src="./images&backgrounds/navigationicons/home.png" width="15" alt=""> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about_us.html"><img src="./images&backgrounds/navigationicons/about_us.png" width="19" alt=""> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./learning_hub.html"><img src="./images&backgrounds/navigationicons/learninghub.png" width="20" alt=""> Learning Hub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workshop.html"><img src="./images&backgrounds/navigationicons/workshop.png" width="19" alt=""> Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Stories.html"><img src="./images&backgrounds/navigationicons/stories.png" width="19" alt=""> Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact_us.html"><img src="./images&backgrounds/navigationicons/contact_us.png" width="19" alt=""> Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./TechForm.html"><img src="./images&backgrounds/navigationicons/TechForm.png" width="19" alt=""> Tech Forms</a>
+                    </li>
+                </ul>
+                <span class="navbar-text" id="clock">
+                    <script>
+                function updateClock() {
+                    var date = new Date();
+                    var dateString = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+                    var timeString = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+                    document.getElementById("clock").innerHTML = dateString + " " + timeString;
+                }
+                setInterval(updateClock, 1000);
+                updateClock(); // made by one guy
+            </script>
+                </span>
+            </div>
+        </div>
+    </nav>
+<br><br>
 
     <!-- Intro -->
     <div class="intro">
@@ -129,6 +166,7 @@
     </div>
 
     <br><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
