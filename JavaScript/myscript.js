@@ -1,26 +1,58 @@
-// just a page made of my own javascript code that will be only applied to profile page
+// just a page made of my own javascript code that will be only applied to techform page, yes it looks bad, but its me who made it so am proud of it :)
 function nameValid(){
     document.getElementById("errName").innerHTML = ""
     let Fname = document.getElementById("Fname").value.trim()
-    if(Fname == "") document.getElementById("errName").innerHTML = "please enter your name!"
-    else if(Fname.length < 2) document.getElementById("errName").innerHTML = "please enter more than 2 characters!"
-    else if(Number(Fname) == Number(Fname)) document.getElementById("errName").innerHTML = "please start with a character!"
+    if(Fname == ""){
+        document.getElementById("errName").innerHTML = "please enter your name!"
+        return undefined
+    } 
+    else if(Fname.length < 2){
+        document.getElementById("errName").innerHTML = "please enter more than 2 characters!"
+        return undefined
+    } 
+    else if(Number(Fname) == Number(Fname)){
+        document.getElementById("errName").innerHTML = "please start with a character!"
+        return undefined
+    } 
     return Fname;
 }
 
 function emailValid(){
     document.getElementById("errEmail").innerHTML = ""
     let Email = document.getElementById("Email").value.trim()
-    if(Email == "") document.getElementById("errEmail").innerHTML = "please enter your email!"
+    if(Email == ""){
+        document.getElementById("errEmail").innerHTML = "please enter your email!"
+        return undefined
+    } 
+    else if(!Email.includes("@")){
+        document.getElementById("errEmail").innerHTML = "please enter a valid email with a @ sign!"
+        return undefined
+    }
+    else if(!Email.includes(".com")){ 
+        document.getElementById("errEmail").innerHTML = "please enter an extention of your domain for email!"
+        return undefined
+    }
+    else if(Email.charAt(Email.indexOf("@") + 1) == "."){ // checks if there is any letters after @ sign 
+        document.getElementById("errEmail").innerHTML = "please enter a domain name!"
+        return undefined
+    }
     return Email;
 }
 
 function ageValid(){
     document.getElementById("errAge").innerHTML = ""
     let Age = document.getElementById("Age").value.trim()
-    if(Age == "" || Age == 0) document.getElementById("errAge").innerHTML = "please enter your age!"
-    else if(Age < 14) document.getElementById("errAge").innerHTML = "you are too small!"
-    else if(Age > 100) document.getElementById("errAge").innerHTML = "how are you still alive?"
+    if(Age == "" || Age == 0){document.getElementById("errAge").innerHTML = "please enter your age!" 
+    return undefined
+    }
+    else if(Age < 14){
+        document.getElementById("errAge").innerHTML = "you are too small!"
+        return undefined
+    } 
+    else if(Age > 100){
+        document.getElementById("errAge").innerHTML = "how are you still alive?"
+        return undefined
+    } 
     return Age;
 }
 
@@ -31,12 +63,10 @@ function goalValid(){
         if(goals[i].checked){
             document.getElementById("errGoal").innerHTML = ""
             return goals[i]
-             
         } 
-        else{
-            document.getElementById("errGoal").innerHTML = "please select a goal!"
-        }
     }
+        document.getElementById("errGoal").innerHTML = "please select a goal!"
+        return undefined
 }
 
 function skillValid(){
@@ -48,31 +78,67 @@ function skillValid(){
             choosenskills.push(skills[i])
         }
     }
-    if(choosenskills.length == 0) document.getElementById("errSkills").innerHTML = "please select atleast one skill!"
+    if(choosenskills.length == 0){
+        document.getElementById("errSkills").innerHTML = "please select atleast one skill!"
+        return undefined
+    }
     return choosenskills
 }
 
 function studyTimeValid(){
     document.getElementById("errTime").innerHTML = ""
     let time = document.getElementById("Time").value
-    if(time <= 0) return document.getElementById("errTime").innerHTML = "please enter a a weekly study time!"
-    else if (time > 40) return document.getElementById("errTime").innerHTML = "no way u study that much"
+    if(time <= 0){
+        document.getElementById("errTime").innerHTML = "please enter a a weekly study time!"
+        return undefined
+    } 
+    else if (time > 40){
+        document.getElementById("errTime").innerHTML = "no way u study that much"
+        return undefined
+    } 
     return time;
 }
 
 function expValid(){
     document.getElementById("errExp").innerHTML = ""
     let exp = document.getElementById("exp").value
-    if(exp == "") document.getElementById("errExp").innerHTML = "please select an experience!"
+    if(exp == ""){
+        document.getElementById("errExp").innerHTML = "please select an experience!"
+        return undefined
+    } 
+    return exp
 }
 
 function GetRecommendation(){
-    nameValid()
-    emailValid()
-    ageValid()
-    goalValid()
-    skillValid()
-    studyTimeValid()
-    expValid()
-   
+    var NameV = nameValid()
+    var EmailV = emailValid()
+    var AgeV = ageValid()
+    var goalV = goalValid()
+    var skillV = skillValid()
+    var StudyV = studyTimeValid()
+    var expV = expValid()
+
+    var arr = [NameV, EmailV, AgeV, goalV, skillV, StudyV, expV]
+    document.getElementById("Report").value = ""
+    for(i = 0; i < arr.length; i++){
+        if(arr[i] == undefined){
+            document.getElementById("Report").value = "there is an error in one of the above sections! please correct it and try again"
+            break
+        }
+    }
+
+    document.getElementById("Report").value = 
+    `
+    User Info...
+    Name: ${NameV}
+    Email: ${EmailV}
+    Age: ${AgeV}
+    --------------------
+    User Goal is becoming ${goalV}... 
+    User knows ${skillV}...
+    Times user spends studying ${StudyV} hours
+    User Experience: ${expV}
+    `
+// needs fixing in those parts, like goalV and skillV, the issue is it displays it as an object which is not what we want
+    
 }
