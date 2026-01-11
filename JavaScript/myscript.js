@@ -62,7 +62,7 @@ function goalValid(){
     for(i = 0 ; i < goals.length; i++){
         if(goals[i].checked){
             document.getElementById("errGoal").innerHTML = ""
-            return goals[i]
+            return goals[i].value
         } 
     }
         document.getElementById("errGoal").innerHTML = "please select a goal!"
@@ -75,7 +75,7 @@ function skillValid(){
     let choosenskills = []
     for(i = 0; i < skills.length ; i++){
         if(skills[i].checked){
-            choosenskills.push(skills[i])
+            choosenskills.push(skills[i].value)
         }
     }
     if(choosenskills.length == 0){
@@ -117,7 +117,7 @@ function GetRecommendation(){
     var skillV = skillValid()
     var StudyV = studyTimeValid()
     var expV = expValid()
-
+    
     var arr = [NameV, EmailV, AgeV, goalV, skillV, StudyV, expV]
     document.getElementById("Report").value = ""
     for(i = 0; i < arr.length; i++){
@@ -125,20 +125,49 @@ function GetRecommendation(){
             document.getElementById("Report").value = "there is an error in one of the above sections! please correct it and try again"
             break
         }
-    }
+        else{
+            var score = 0
+            var rec = ""
+            score = (skillV.length * 10) + (StudyV * 2) + (expV == "Advanced" ? 30 : (expV == "Intermediate") ? 20 : 10)
+            if(score > 100){
+                rec = "Choose specialization (Cyber / Web / Programming)"
+            }
+            else if (score < 100 && score > 71){
+                rec = "Start projects & Git/Github"
+            }
+            else if (score < 70 && score > 41){
+                rec = "Operating systems basics (Windows / Linux fundamentals)"
+            }
+            else{
+                rec = "Start with basics of programming language you prefer & computer fundamentals"
+            }
+            
+            document.getElementById("Report").value = 
+`Report
+ =====================================
+ User Info...
+ 
+ Name: ${NameV}
+ Email: ${EmailV}
+ Age: ${AgeV}
+ 
+ ======================================
+ 
+ User Status...
+ User Learning goal is ${goalV}... 
+ User knows ${skillV}...
+ Times user spends studying ${StudyV} hours
+ User Experience: ${expV}
 
-    document.getElementById("Report").value = 
-    `
-    User Info...
-    Name: ${NameV}
-    Email: ${EmailV}
-    Age: ${AgeV}
-    --------------------
-    User Goal is becoming ${goalV}... 
-    User knows ${skillV}...
-    Times user spends studying ${StudyV} hours
-    User Experience: ${expV}
-    `
-// needs fixing in those parts, like goalV and skillV, the issue is it displays it as an object which is not what we want
+ ======================================
+ 
+ Recommendation:
+ ${rec}
+ 
+ ======================================
+ `
+        }
+    }
     
 }
+
