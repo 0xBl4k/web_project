@@ -17,12 +17,8 @@
     .intro {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 20px;
-        padding-right: 20%; 
-        margin-left:100px ;
         background: url(/images&backgrounds/logo.png) no-repeat right;
         background-size: 400px;
-        margin-right: 90px;
-        margin-top: 150px;
     }
     /* Styling for the paragraph and heading inside the intro section */
     .intro p, h3{
@@ -33,7 +29,6 @@
 
     /*-- Styling for the box section --*/
     .box {
-    
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -41,7 +36,6 @@
     font-size: 26px;
     background-color: #ffffff;
     border-radius: 50px;
-
 }
     /*-- Styling for the box paragraph --*/
     .box p{
@@ -59,7 +53,6 @@
         border-radius: 10px; 
         padding: 20px; 
         background-color: #00304f;
-        margin: 5% 20% 0px;
     }
     /*-- Styling for the list items and paragraph inside the Why section --*/
     .section{
@@ -74,7 +67,6 @@
         background: #ffffff;
         color: rgb(0, 0, 0);
         padding: 10px;
-        margin: 5% 20% 0px;
         border-radius: 20px;
         border: black solid 4px;
     }
@@ -134,46 +126,92 @@
         </div>
     </nav>
 <br><br>
-    <!-- Intro Section -->
-    <div class="intro">
-        <h3>Start Your Tech Journey Today — Learn Essential Skills Step by Step.</h3>
-        <p>Technology doesn’t have to be confusing or overwhelming. Our platform guides you through the basics with clear explanations, simple examples, and beginner-friendly lessons designed to build your confidence one step at a time. Whether you’re learning to code, understand the internet, or explore digital tools, you’ll find everything you need to grow your skills and unlock new opportunities in the tech world. Your journey starts here — and you can learn at your own pace.</p>
+
+    <!-- Intro Section - Using Bootstrap Grid -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 intro">
+                <h3>Start Your Tech Journey Today – Learn Essential Skills Step by Step.</h3>
+                <p>Technology doesn't have to be confusing or overwhelming. Our platform guides you through the basics with clear explanations, simple examples, and beginner-friendly lessons designed to build your confidence one step at a time. Whether you're learning to code, understand the internet, or explore digital tools, you'll find everything you need to grow your skills and unlock new opportunities in the tech world. Your journey starts here – and you can learn at your own pace.</p>
+            </div>
+        </div>
     </div>
-    <a href="learning_hub.html"><button id="start">Get Started</button></a>
-    <a href="workshop.html"><button id="work">See Workshop</button></a>
-    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <a href="learning_hub.html"><button id="start">Get Started</button></a>
+                <a href="workshop.html"><button id="work">See Workshop</button></a>
+            </div>
+        </div>
+    </div>
     
     <!-- Featured Skills Section -->
     <div class="section">
-        <div class="Why">
-            <ul type="circle">
-                <h4>Why These Skills Matter?</h4>
-                <li>🚀 Improve confidence with technology</li>
-                <li>🎯 Increase future job and career opportunities</li>
-                <li>🔐 Stay safer online with better awareness</li>
-                <li>📈 Gain productivity and organization skills</li>
-                <li>💡 Develop stronger problem-solving and logical thinking</li>
-                <li>🤝 Become more prepared for teamwork and digital collaboration</li>
-                <p>Learning new tech skills helps you understand how things work online, stay safe, and use tools that make work and studying easier. These skills give you a strong start in your future career and help you grow step by step with confidence.</p>
-            </ul>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="Why">
+                        <ul type="circle">
+                            <h4>Why These Skills Matter?</h4>
+                            <li>🚀 Improve confidence with technology</li>
+                            <li>🎯 Increase future job and career opportunities</li>
+                            <li>🔒 Stay safer online with better awareness</li>
+                            <li>📈 Gain productivity and organization skills</li>
+                            <li>💡 Develop stronger problem-solving and logical thinking</li>
+                            <li>🤝 Become more prepared for teamwork and digital collaboration</li>
+                            <p>Learning new tech skills helps you understand how things work online, stay safe, and use tools that make work and studying easier. These skills give you a strong start in your future career and help you grow step by step with confidence.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <!-- Featured Categories -->
-        <fieldset>
-            <legend style="border: 2px solid rgb(0, 0, 0); font-size: 35px; background-color: #00304f; color: white; padding: 10px; border-radius: 10px;">Featured categories</legend>
-            <div id="box1" class="box">🌐Web Basics
-                <p>The web is the foundation of almost every modern job, from marketing to programming. It is made up of millions of connected pages that you access through a browser like Chrome or Firefox. Understanding how the web works—how websites load, how links connect information, and how basic languages like HTML and CSS shape pages—gives beginners a strong starting point in tech. These basics help you build confidence and open the door to more advanced digital skills.</p>
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <fieldset>
+                        <legend style="border: 2px solid rgb(0, 0, 0); font-size: 35px; background-color: #00304f; color: white; padding: 10px; border-radius: 10px;">Featured categories</legend>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="box1" class="box">🌐Web Basics
+                                    <p>The web is the foundation of almost every modern job, from marketing to programming. It is made up of millions of connected pages that you access through a browser like Chrome or Firefox. Understanding how the web works—how websites load, how links connect information, and how basic languages like HTML and CSS shape pages—gives beginners a strong starting point in tech. These basics help you build confidence and open the door to more advanced digital skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="box2" class="box">🔒Cybersecurity
+                                    <p>Cybersecurity skills are important for every career, not just for IT professionals. They teach you how to protect your data, your accounts, and your devices from online threats. Learning simple habits—like creating strong passwords, avoiding suspicious links, and recognizing phishing attempts—helps you stay safe and responsible in any workplace. These skills also make you a more reliable and trusted digital user, which is valuable for career growth.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="box3" class="box">💻Programming Fundamentals
+                                    <p>Programming skills are becoming essential in many career paths, even outside the tech industry. Learning the basics—such as variables, loops, and conditions—teaches you how to think logically, solve problems, and automate tasks. Beginner-friendly languages like Python and JavaScript help you quickly understand how computers follow instructions. These fundamentals prepare you for building real projects and can greatly improve your career opportunities in the future.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="box4" class="box">⚙️Digital Tools for Productivity
+                                    <p>Digital productivity tools are used in almost every professional environment. Platforms like Google Drive, Notion, and Trello help you manage tasks, organize files, and work efficiently with others. Learning how to use these tools makes you more productive, more organized, and more prepared for modern work environments. These skills not only help beginners study better but also make them more competitive in their future careers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
             </div>
-            <div id="box2" class="box">🔐Cybersecurity
-                <p>Cybersecurity skills are important for every career, not just for IT professionals. They teach you how to protect your data, your accounts, and your devices from online threats. hrLearning simple habits—like creating strong passwords, avoiding suspicious links, and recognizing phishing attempts—helps you stay safe and responsible in any workplace. These skills also make you a more reliable and trusted digital user, which is valuable for career growth.</p>
-            </div>
-            <div id="box3" class="box">💻Programming Fundamentals
-                <p>Programming skills are becoming essential in many career paths, even outside the tech industry. Learning the basics—such as variables, loops, and conditions—teaches you how to think logically, solve problems, and automate tasks. Beginner-friendly languages like Python and JavaScript help you quickly understand how computers follow instructions. These fundamentals prepare you for building real projects and can greatly improve your career opportunities in the future.</p>
-            </div>
-            <div id="box4" class="box">⚙️Digital Tools for Productivity
-                <p>Digital productivity tools are used in almost every professional environment. Platforms like Google Drive, Notion, and Trello help you manage tasks, organize files, and work efficiently with others. Learning how to use these tools makes you more productive, more organized, and more prepared for modern work environments. These skills not only help beginners study better but also make them more competitive in their future careers.</p>
-            </div>
-        </fieldset>
+        </div>
     </div>
+
     <p style="text-align: center;"><a href="#" style="color: rgb(255, 255, 255); text-decoration: none;">Go<img src="images&backgrounds/arrowup.png" width="25px" style="border: 2px solid rgb(255, 255, 255); border-radius: 100px; padding: 4px;">up<img src="images&backgrounds/fred-mopping-fred.gif" width="50px"></a></p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     

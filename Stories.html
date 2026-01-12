@@ -27,48 +27,21 @@
             color: #333;
         }
 
-        /* --- LEFT STORIES (1 & 2) --- */
-        .story-left {
+        /* Story boxes */
+        .story-box {
             background-color: aliceblue;
             border-radius: 30px;
             padding: 20px;
-            width: 40%;
-            
-            /* Position on Left */
-            margin-left: 5%;
-            margin-right: 55%;
-            
-            margin-bottom: 30px;
-            font-size: 18px;
-        }
-
-        /* --- RIGHT STORIES (3 & 4) --- */
-        .story-right {
-            background-color: aliceblue;
-            border-radius: 30px;
-            padding: 20px;
-            width: 40%;
-            
-            /* Position on Right */
-            margin-left: 55%;
-            margin-right: 5%;
-            
             margin-bottom: 30px;
             font-size: 18px;
         }
 
         /* --- IMAGE SETTINGS --- */
         img.story-img {
-            /* Changed width to 450px to make it bigger */
             width: 450px; 
+            width: 100%;
             height: auto; 
-            
             border-radius: 20px; 
-            
-            /* Center the image */
-         
-            margin-left: auto;
-            margin-right: auto;
             margin-top: 15px;
         }
 
@@ -129,37 +102,70 @@
 
     <!-- Intro -->
     <div class="intro">
-       <h2>Success Stories</h2>
-       <p>Read inspiring experiences and success stories from our community members who have embarked on their tech learning journeys.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Success Stories</h2>
+                    <p>Read inspiring experiences and success stories from our community members who have embarked on their tech learning journeys.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- STORY 1 (LEFT) -->
-    <div class="story-left">
-       <h3>Story 1: Mohammad's Journey into Coding</h3>
-       <p>Mohammad, a former teacher, decided to switch careers and learn coding. Through our platform, he mastered web development and now works as a front-end developer at a leading tech company.</p>
-       <img src="images&backgrounds/humans/mohammad.png" class="story-img">
+    <div class="container">
+        <!-- STORY 1 (LEFT) -->
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-12">
+                <div class="story-box">
+                    <h3>Story 1: Mohammad's Journey into Coding</h3>
+                    <p>Mohammad, a former teacher, decided to switch careers and learn coding. Through our platform, he mastered web development and now works as a front-end developer at a leading tech company.</p>
+                    <div class="text-center">
+                        <img src="images&backgrounds/humans/mohammad.png" class="story-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STORY 2 (RIGHT) -->
+        <div class="row justify-content-end">
+            <div class="col-lg-6 col-md-8 col-12">
+                <div class="story-box">
+                    <h3>Story 2: Sarah's Cybersecurity Success</h3>
+                    <p>Sarah started in IT support but was inspired to shift to cybersecurity after a major data breach. She self-taught through courses. Her skills earned her a promotion, and she later became a cybersecurity expert.</p>
+                    <div class="text-center">
+                        <img src="images&backgrounds/humans/Sarah.png" class="story-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STORY 3 (LEFT) -->
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-12">
+                <div class="story-box">
+                    <h3>Story 3: Yousef Web Developer</h3>
+                    <p>Yousef was curious about web development but didn't know where to start. He took our web development bootcamp and learned HTML, CSS, and JavaScript. Now, he builds responsive websites for local businesses.</p>
+                    <div class="text-center">
+                        <img src="images&backgrounds/humans/yousef.png" class="story-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STORY 4 (RIGHT) -->
+        <div class="row justify-content-end">
+            <div class="col-lg-6 col-md-8 col-12">
+                <div class="story-box">
+                    <h3>Story 4: Lana digital tools</h3>
+                    <p>Lana was interested in digital tools and how they can improve productivity. She explored various software and applications through our platform and now helps businesses optimize their workflows using the latest digital solutions.</p>
+                    <div class="text-center">
+                        <img src="images&backgrounds/humans/Lana.png" class="story-img">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- STORY 2 (Right ) -->
-    <div class="story-right"> 
-       <h3>Story 2: Sarah's Cybersecurity Success</h3>
-       <p>Sarah started in IT support but was inspired to shift to cybersecurity after a major data breach. She self-taught through courses. Her skills earned her a promotion, and she later became a cybersecurity expert.</p>
-       <img src="images&backgrounds/humans/Sarah.png" class="story-img">
-    </div>
-
-    <!-- STORY 3 (Left) -->
-    <div class="story-left">
-        <h3>Story 3: Yousef Web Developer</h3>
-        <p>Yousef was curious about web development but didn't know where to start. He took our web development bootcamp and learned HTML, CSS, and JavaScript. Now, he builds responsive websites for local businesses.</p>
-        <img src="images&backgrounds/humans/yousef.png" class="story-img">
-    </div>
-
-    <!-- STORY 4 (RIGHT) -->
-    <div class="story-right">
-        <h3>Story 4: Lana digital tools</h3>
-        <p>Lana was interested in digital tools and how they can improve productivity. She explored various software and applications through our platform and now helps businesses optimize their workflows using the latest digital solutions.</p>
-        <img src="images&backgrounds/humans/Lana.png" class="story-img">
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>

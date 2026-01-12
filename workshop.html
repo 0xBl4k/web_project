@@ -33,8 +33,6 @@
         /*-- Styling for the workshop header paragraphs --*/
         .workshop-header p {
             font-size: 1.1rem;
-            width: 70%;
-            margin: 0 auto;
             color: #34495e;
         }
 
@@ -49,7 +47,7 @@
             background: white;
             border-radius: 10px;
             padding: 20px;
-            margin: 40px 400px;
+            margin: 40px 0;
         }
 
         /*-- Styling for the workshop card images --*/
@@ -145,62 +143,88 @@
 
     <!-- Workshop Header -->
     <div class="workshop-header">
-        <h1>Welcome to the Workshop</h1>
-        <p>
-            Learn by doing! Explore hands-on mini projects, beginner-friendly lessons, 
-            and simple interactive activities designed to make technology easy and enjoyable. 
-            Select a workshop below and start building your skills step by step.
-        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Welcome to the Workshop</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-11 col-12">
+                    <p>
+                        Learn by doing! Explore hands-on mini projects, beginner-friendly lessons, 
+                        and simple interactive activities designed to make technology easy and enjoyable. 
+                        Select a workshop below and start building your skills step by step.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <!-- Workshop Cards -->
     <div class="workshop-container">
-        
-        <div class="workshop-card">
-            <h3>Web Basics</h3>
-            <p>Learn the fundamentals of creating websites using HTML, CSS, and basic JavaScript.</p>
-            <ul>
-                sources:
-                <li><a href="https://www.w3schools.com/html/default.asp">w3schools HTML</a> best site for learning html</li>
-                <li><a href="https://web.dev/learn/css">web.dev CSS</a> comprehensive CSS learning resource</li>
-                <li><a href="https://javascript.info/">javascript.info</a> detailed JavaScript tutorials</li>
-            </ul>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="workshop-card">
+                        <h3>Web Basics</h3>
+                        <p>Learn the fundamentals of creating websites using HTML, CSS, and basic JavaScript.</p>
+                        <ul>
+                            sources:
+                            <li><a href="https://www.w3schools.com/html/default.asp">w3schools HTML</a> best site for learning html</li>
+                            <li><a href="https://web.dev/learn/css">web.dev CSS</a> comprehensive CSS learning resource</li>
+                            <li><a href="https://javascript.info/">javascript.info</a> detailed JavaScript tutorials</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="workshop-card">
+                        <h3>Cybersecurity</h3>
+                        <p>Learn the basics of staying safe online, protecting your data, and understanding digital privacy.</p>
+                        <ul>
+                            sources:
+                            <li><a href="https://www.hackthebox.com/">HackTheBox</a> hands on hacking labs and categories</li>
+                            <li><a href="https://tryhackme.com/">TryHackMe</a> very friendly beginner platform</li>
+                            <li><a href="https://cyberdefenders.org/">CyberDefenders</a> perfect for blue team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="workshop-card">
+                        <h3>Coding Basics</h3>
+                        <p>Start learning the foundations of coding with simple examples and guided tasks.</p>
+                        <ul>sources:
+                            <li><a href="https://dev.java/learn/">Java Development</a> comprehensive Java tutorials</li>
+                            <li><a href="https://cplusplus.com/doc/tutorial/">C++ Tutorials</a> detailed C++ programming guide</li>
+                            <li><a href="https://realpython.com/search?kind=article&kind=course&order=newest">Real Python</a> extensive Python resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-12">
+                    <div class="workshop-card">
+                        <h3>Digital Tools</h3>
+                        <p>Get comfortable with useful tools like Google Docs, Excel, and cloud storage.</p>
+                        <ul>sources:
+                            <li><a href="https://support.google.com/docs/">Google Docs Help</a> official documentation and tutorials</li>
+                            <li><a href="https://support.microsoft.com/en-us/excel">Microsoft Excel Support</a> comprehensive Excel guides</li>
+                            <li><a href="https://www.dropbox.com/learn">Dropbox Learning Center</a> cloud storage tutorials and tips</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="workshop-card">
-            <h3>Cybersecurity</h3>
-            <p>Learn the basics of staying safe online, protecting your data, and understanding digital privacy.</p>
-            <ul>
-                sources:
-                <li><a href="https://www.hackthebox.com/">HackTheBox</a> hands on hacking labs and categories</li>
-                <li><a href="https://tryhackme.com/">TryHackMe</a> very friendly beginner platform</li>
-                <li><a href="https://cyberdefenders.org/">CyberDefenders</a> perfect for blue team</li>
-            </ul>
-        </div>
-        
-        <div class="workshop-card">
-            <h3>Coding Basics</h3>
-            <p>Start learning the foundations of coding with simple examples and guided tasks.</p>
-            <ul>sources:
-                <li><a href="https://dev.java/learn/">Java Development</a> comprehensive Java tutorials</li>
-                <li><a href="https://cplusplus.com/doc/tutorial/">C++ Tutorials</a> detailed C++ programming guide</li>
-                <li><a href="https://realpython.com/search?kind=article&kind=course&order=newest">Real Python</a> extensive Python resources</li>
-            </ul>
-        </div>
-        
-        <div class="workshop-card">
-            <h3>Digital Tools</h3>
-            <p>Get comfortable with useful tools like Google Docs, Excel, and cloud storage.</p>
-            <ul>sources:
-                <li><a href="https://support.google.com/docs/">Google Docs Help</a> official documentation and tutorials</li>
-                <li><a href="https://support.microsoft.com/en-us/excel">Microsoft Excel Support</a> comprehensive Excel guides</li>
-                <li><a href="https://www.dropbox.com/learn">Dropbox Learning Center</a> cloud storage tutorials and tips</li>
-            </ul>
-        </div>
-
-
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>

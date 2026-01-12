@@ -13,7 +13,7 @@
             margin: 0;
             color: black;
         }
-/* helo */
+
         /* Top White Section */
         .intro {
             background-color: white;
@@ -32,16 +32,10 @@
         /* The Box style */
         .topic-box {
             background-color: white;
-            width: 50%; /* Box takes half the screen width */
             padding: 20px;
             border-radius: 10px;
-            
-            /* THIS IS THE SIMPLIFIED PART: */
             margin-top: 20px;
             margin-bottom: 20px;
-            margin-left: auto;  /* Auto calculates equal space on left */
-            margin-right: auto; /* Auto calculates equal space on right */
-            /* Result: The box stays perfectly in the center */
         }
 
         /* Text alignment inside the box */
@@ -55,13 +49,12 @@
         }
         /*-- Styling for the video inside the topic box --*/
         .topic-box video{
-            margin: 0px 150px;
-
+            width: 100%;
+            height: auto;
         }
 
         /* The Link Button */
         .link-btn {
-         
             background-color: orange;
             color: white;
             text-align: center;
@@ -69,7 +62,7 @@
             width: 100px;
             margin-left: auto;
             margin-right: auto;
-            text-decoration: none; /* No underline */
+            text-decoration: none;
             border-radius: 5px;
         }
         
@@ -126,43 +119,79 @@
 
     <!-- Intro -->
     <div class="intro">
-        <h1>Learning Hub</h1>
-        <p>Welcome to the learning center. Choose a topic below to start learning.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Learning Hub</h1>
+                    <p>Welcome to the learning center. Choose a topic below to start learning.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Section 1: Tech Skills -->
-    <h2>Tech Skills</h2>
-    
-    <div class="topic-box">
-        <h3>Web Basics</h3>
-        <p>Learn how to make websites using HTML and CSS.</p>
-        <video controls>
-            <source src="images&backgrounds/videos/introtoweb.mp4" type="video/mp4">
-        </video>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Tech Skills</h2>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12">
+                <div class="topic-box">
+                    <h3>Web Basics</h3>
+                    <p>Learn how to make websites using HTML and CSS.</p>
+                    <div class="d-flex justify-content-center">
+                        <video controls>
+                            <source src="images&backgrounds/videos/introtoweb.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="topic-box">
-        <h3>Cybersecurity</h3>
-        <p>How to stay safe on the internet and protect data.</p>
-        <video controls>
-            <source src="images&backgrounds/videos/cybersecurity.mp4" type="video/mp4">
-        </video>
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12">
+                <div class="topic-box">
+                    <h3>Cybersecurity</h3>
+                    <p>How to stay safe on the internet and protect data.</p>
+                    <div class="d-flex justify-content-center">
+                        <video controls>
+                            <source src="images&backgrounds/videos/cybersecurity.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="topic-box">
-        <h3>Programming</h3>
-        <p>Introduction to coding using Python language.</p>
-        <video controls>
-            <source src="images&backgrounds/videos/programming.mp4" type="video/mp4">
-        </video>
-    </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12">
+                <div class="topic-box">
+                    <h3>Programming</h3>
+                    <p>Introduction to coding using Python language.</p>
+                    <div class="d-flex justify-content-center">
+                        <video controls>
+                            <source src="images&backgrounds/videos/programming.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="topic-box">
-        <h3>Digital tools</h3>
-        <p>Learn about various digital tools to enhance productivity.</p>
-        <video controls>
-            <source src="images&backgrounds/videos/digital.mp4" type="video/mp4">
-        </video>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12">
+                <div class="topic-box">
+                    <h3>Digital tools</h3>
+                    <p>Learn about various digital tools to enhance productivity.</p>
+                    <div class="d-flex justify-content-center">
+                        <video controls>
+                            <source src="images&backgrounds/videos/digital.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <br><br>

@@ -23,7 +23,6 @@
       background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
       padding: 15px;
       border-radius: 8px;
-      margin: 40px 700px 40px;
     }
     
     /*-- Styling for the section headings --*/
@@ -75,10 +74,6 @@
       margin-bottom: 20px;
     }
   </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
         <nav class="navbar navbar-expand-lg fixed-top bg-dark border-body border-bottom" data-bs-theme="dark">
@@ -127,35 +122,52 @@
         </div>
     </nav>
 <br><br>
-  <h1>Self Assessment</h1>
-<!-- Self Assessment Form -->
-  <h2>Rate Your Basic Tech Knowledge</h2>
-  <form>
-    <label for="word-skill">Microsoft Word:</label>
-    <input type="range" class="skills" id="word-skill" min="1" max="10">
 
-    <label for="ppt-skill">Microsoft PowerPoint:</label>
-    <input type="range" class="skills"  id="ppt-skill" min="1" max="10">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-12">
+        <h1>Self Assessment</h1>
+      </div>
+    </div>
 
-    <label for="excel-skill">Microsoft Excel:</label>
-    <input type="range" class="skills" id="excel-skill" min="1" max="10">
+    <!-- Self Assessment Form -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-12">
+        <h2>Rate Your Basic Tech Knowledge</h2>
+        <form>
+          <label for="word-skill">Microsoft Word:</label>
+          <input type="range" class="skills" id="word-skill" min="1" max="10">
 
-    <label for="email-skill">Email & Communication Tools:</label>
-    <input type="range" class="skills" id="email-skill" min="1" max="10">
+          <label for="ppt-skill">Microsoft PowerPoint:</label>
+          <input type="range" class="skills"  id="ppt-skill" min="1" max="10">
 
-    <label for="internet-skill">Internet & Browsing:</label>
-    <input type="range" class="skills" id="internet-skill" min="1" max="10">
+          <label for="excel-skill">Microsoft Excel:</label>
+          <input type="range" class="skills" id="excel-skill" min="1" max="10">
 
-    <button type="submit">Submit</button>
-  </form>
-<!-- Reflection Section -->
-  <div class="reflection">
-    <h2>Your Reflection</h2>
-    <p>Write down what you’ve learned and what goals you want to achieve next:</p>
-    <textarea rows="5" placeholder="Your thoughts..."></textarea>
+          <label for="email-skill">Email & Communication Tools:</label>
+          <input type="range" class="skills" id="email-skill" min="1" max="10">
+
+          <label for="internet-skill">Internet & Browsing:</label>
+          <input type="range" class="skills" id="internet-skill" min="1" max="10">
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Reflection Section -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-12">
+        <div class="reflection">
+          <h2>Your Reflection</h2>
+          <p>Write down what you've learned and what goals you want to achieve next:</p>
+          <textarea rows="5" placeholder="Your thoughts..."></textarea>
+        </div>
+      </div>
+    </div>
   </div>
  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
